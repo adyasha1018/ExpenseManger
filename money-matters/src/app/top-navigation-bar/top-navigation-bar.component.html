@@ -1,0 +1,9 @@
+<div class="top-nav">
+  <div class="icon" (click)="toggleSidePanel()">
+    <!-- Add your icon here -->
+    Icon
+  </div>
+</div>
+<app-side-panel
+  *ngIf="showSidePanel"
+></app-side-panel>

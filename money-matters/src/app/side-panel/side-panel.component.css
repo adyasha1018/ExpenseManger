@@ -1,0 +1,43 @@
+/* side-panel.component.css */
+
+
+.side-panel {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  width: 250px; /* Adjust the width as needed */
+  height: 100%;
+  background-color: #f37f7f;
+  color: #fff;
+  padding-top: 60px;
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.side-panel a {
+  padding: 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.side-panel a:hover {
+  background-color: #555;
+}
+
+.side-panel .close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Add an animation for smooth opening/closing of the side panel */
+.side-panel.open {
+  left: 0;
+}

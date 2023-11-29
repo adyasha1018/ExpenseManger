@@ -1,4 +1,4 @@
-
+<!--
 <nav id="app-navbar">
   <div id="toggle-menu"><button class="toggle-button" (click)="toggleMenu = !toggleMenu">Toggle</button></div>
   <div id="title">{{title}}</div>
@@ -21,12 +21,20 @@
 <section>
   <article>
       <h2>Manage your Expense using our app</h2>
-      <p>There are four categories to manage our Expense, i.e. 
-       <b>1.  Accounts  2. Income 3. Expense  4. Overview</b> 
+      <p>There are four categories to manage our Expense, i.e.
+       <b>1.  Accounts  2. Income 3. Expense  4. Overview</b>
        </p>
-    
+
        <h3>Navigate through toggle menu.</h3>
        <p>Or</p>
        <h3>Click each one to view details and add the necessary.</h3>
   </article>
-</section>
+</section> -->
+<div class="app-container">
+  <app-top-navigation-bar></app-top-navigation-bar>
+  <div class="main-container">
+    <app-side-panel></app-side-panel>
+    <router-outlet></router-outlet>
+  </div>
+</div>
+

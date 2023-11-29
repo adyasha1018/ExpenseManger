@@ -3,8 +3,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: darkcyan;
-    border: 2px solid darkcyan;
+    background-color: #19bed3;
+    border: 2px solid white;
     align-items: center;
     color:#fff;
 }
@@ -14,8 +14,20 @@
 }
 .toggle-button, .profile-button{
     padding: 12px;
-    background-color:  rgb(2, 62, 131);
-    color: #fff;
+    background-color:  rgb(60, 13, 230);
+    color: #fff;/* app.component.css */
+
+    .app-container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .main-container {
+      display: flex;
+      flex: 1;
+      overflow-x: hidden; /* Optional: Hide horizontal overflow */
+    }
+
     margin: 8px;
     font-size: 16px;
     border: 2px solid whitesmoke;
@@ -49,4 +61,15 @@ section {
     display: contents;
     text-align: center;
     font: 1em sans-serif;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+.main-container {
+  display: flex;
+  flex: 1;
+  overflow-x: hidden; /* Optional: Hide horizontal overflow */
 }
